@@ -91,6 +91,12 @@ and preserved external-fork approval policy. Controlled fork-PR, merge-review,
 and denied-push behavior tests remain pending; no unauthorized push or destructive
 tag operation was attempted as a test.
 
+GitHub validated the pushed CODEOWNERS file with `errors: []`. The bootstrap PR
+requested platform-engineering review and was blocked pending review. Opening the
+PR registered/executed the chart workflow: its `lint-test` check passed. This
+confirms that workflow now operates, not that all six source workflows are active
+or that a complete required unit/lint/security check suite is established.
+
 ## Workflow-by-workflow review
 
 The Actions workflow API listed only a dynamic Dependency Graph workflow; the
